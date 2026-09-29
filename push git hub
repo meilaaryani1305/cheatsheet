@@ -1,0 +1,63 @@
+git add
+
+tanpa menentukan file yang mau ditambahkan. Git sendiri sudah memberi petunjuk:
+
+Maybe you wanted to say 'git add .'
+
+Jadi kalau kamu memang mau memasukkan semua isi folder cheatsheet kuis ke Git, jalankan:
+
+git add .
+
+Setelah itu buat commit:
+
+git commit -m "Upload cheatsheet kuis"
+
+Urutannya:
+
+git init
+   ↓
+git add .
+   ↓
+git commit -m "Upload cheatsheet kuis"
+
+⚠️ Tapi pastikan folder cheatsheet kuis memang berisi file yang mau kamu upload. Kamu bisa cek dulu dengan:
+
+dir
+
+Kalau isinya sudah benar, lanjut git add ..
+
+PS D:\KULIAH\PRAKTIKUM MOBILE\cheatsheet kuis> git add .
+PS D:\KULIAH\PRAKTIKUM MOBILE\cheatsheet kuis> git commit -m "Upload Cheatsheet Kuis"
+[master (root-commit) 8023c52] Upload Cheatsheet Kuis
+ 2 files changed, 379 insertions(+)
+ create mode 100644 flutter.dart
+ create mode 100644 tipe_latkuis.dart
+PS D:\KULIAH\PRAKTIKUM MOBILE\cheatsheet kuis> 
+
+Berhasil ✅
+
+Commit cheatsheet kuis sudah berhasil dibuat:
+
+[master (root-commit) 8023c52] Upload Cheatsheet Kuis
+2 files changed, 379 insertions(+)
+
+Dan yang masuk adalah:
+
+flutter.dart
+tipe_latkuis.dart
+
+Sekarang kalau kamu mau upload ke GitHub, tinggal lanjut:
+
+1. Ubah branch ke main
+git branch -M main
+2. Hubungkan ke repository GitHub
+
+Kalau kamu sudah membuat repo GitHub khusus cheatsheet kuis, kirim link repo-nya ke aku.
+
+Nanti perintahnya akan seperti:
+
+git remote add origin LINK_REPOSITORY_GITHUB
+3. Push
+git push -u origin main
+
+Jadi jangan pakai URL repo lat_kuis atau PRAKPAM_Pertemuan4, karena ini repo ketiga yang berbeda.
